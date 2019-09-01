@@ -1,21 +1,24 @@
+// Navigation code here
 .navigation{
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-}
+    .mixin-flex;
+    flex-direction: column;
+    align-items: center;
+    background: @nav-bg;
+    border: 1px solid @nav-border;
+    width: 100%; 
 
-h1{
-    font-size: 4rem; 
-}
+    h1{
+        font-size: 4rem;
+    }
 
-nav{
-    display: flex; 
-    justify-content: center; 
-}
+    nav{
+        .mixin-flex;
 
-a{
-    text-decorator: none; 
-    margin: 15px 1.6rem; 
-    color: black; 
-    font-size: 1.6rem; 
+        a{
+            text-decoration: none; 
+            margin: 15px 1.6rem; 
+            color: @nav-font;
+            font-size: 1.6rem;
+        }
+    }
 }
