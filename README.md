@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive is fluid and adapts to the size of the screen no matter what the target device. Responsive uses CSS media queries to change styles based on the target of device such as display type, width, height etc., and only one of these is necessary for the site to adapt to different screens.
+
+Adaptive design uses static layouts based on breakpoints which don't respond once they're initially loaded. Adaptive works to detect the screen size and load the appropriate layout for it.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means designing an online experience for mobile before designing it for the desktop Web or any other device. The mobile first approach is designing for the smallest screen and working your way up.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+While rem is equal to 16px, it's typically a problematic number to deal with. Using 62.5% as the font-size in an html tag allows 1 rem to equal 10px which makes it much simpler to manage and convert.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a more vigorous syntax for CSS written in a different language. It’s program allows you to generate CSS from the preprocessor’s own unique syntax.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is the ability to join multiple files or CSS stylesheets into one. You can create different files for each screen or pages and then import them all in the main CSS file. Now, only the main file needs to be imported on the main website and internal files will be read from the server. 
+
+The preprocessing concept that give me the most trouble is “mixins” function. I get a little confused or mixed up when mixing different classes together.  
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
