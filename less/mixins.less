@@ -1,22 +1,28 @@
 // Mixins Here
 .mixin-flex(){
     display: flex; 
-    justify-content: center; 
+    justify-content: center;
 }
 
-.mixin-btn(@bdg-clr, @font-clr){
-    background: @bgd-clr;
+.mixin-btn(@btn-bg-clr, @font-clr){
+    background: @btn-bg-clr;
     color: @font-clr;
-    font-size: 2rem; 
-    cursor: pointer; 
+    font-size:  2em;
+    cursor: pointer;
     border-radius: 5px;
-    padding: 5px 10px; 
-    width: 30%;
-    text-align: center;
+    padding: 20px;
+    width: 40%; 
+    align-items: center;
 
     &:hover{
-        background: @font-clr; 
-        color: @bgd-clr; 
-        border: 1px solid @bgd-clr;
+        background: @font-clr;
+        color: @btn-bg-clr;
+        border: 1px solid @btn-bg-clr;
+    }
+}
+
+.mixin-none(){
+    @media  @phone{
+        display: none;
     }
 }
